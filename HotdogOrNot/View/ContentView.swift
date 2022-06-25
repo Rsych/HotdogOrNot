@@ -13,13 +13,12 @@ struct ContentView: View {
     private let label = Text("Camera feed")
     var session = AVCaptureSession()
     
+    @StateObject private var vm = ContentViewModel()
+
     var body: some View {
         ZStack {
-          FrameView(image: nil)
+            FrameView(image: vm.frame)
                 .edgesIgnoringSafeArea(.all)
-
-          Text("Filter the World!")
-            .foregroundColor(.white)
         }
     }
 }

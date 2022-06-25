@@ -12,19 +12,15 @@ struct FrameView: View {
     private let label = Text("Camera feed")
     
     var body: some View {
-        // 1
         if let image = image {
-            // 2
             GeometryReader { geo in
-                // 3
-                Image(image, scale: 1.0, orientation: .upMirrored, label: label)
+                Image(image, scale: 1.0, label: label)
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                     .clipped()
             }
         } else {
-            // 4
             Color.black
         }
     }
