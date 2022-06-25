@@ -9,9 +9,12 @@ import SwiftUI
 import AVKit
 
 struct ContentView: View {
-    var image: CGImage?
+    @State var image: CGImage?
     private let label = Text("Camera feed")
     var session = AVCaptureSession()
+    @State var showLabel = false
+    
+    @State var classifier = Classifier()
     
     @StateObject private var vm = ContentViewModel()
     
@@ -23,8 +26,20 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
+                Label {
+                    Text(classifier.results == "hot dog" ? "Hotdog!" : "Not Hotdog!")
+                } icon: {
+                    Image(systemName: classifier.results == "hot dog" ? "o.circle" : "x.circle")
+                }
+                .foregroundColor(classifier.results == "hot dog" ? .green : .red)
+                .font(.title)
+//                .hidden()
                 Button {
-                    
+                    if vm.frame != nil {
+                        guard let image = vm.frame else { return }
+                        classifier.detect(cgImage: image)
+                    }
+                    print(classifier.results)
                 } label: {
                     Text("Hotdog?")
                 }
@@ -37,6 +52,10 @@ struct ContentView: View {
             }
         }
     }
+//    func runML(cgImage: CGImage?) {
+//        guard let cgImage = image else { fatalError() }
+//        classifier.detect(cgImage: cgImage)
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
