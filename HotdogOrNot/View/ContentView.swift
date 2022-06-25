@@ -25,20 +25,21 @@ struct ContentView: View {
             ErrorView(error: vm.error)
             VStack {
                 Spacer()
-                
-                Label {
-                    Text(classifier.results == "hot dog" ? "Hotdog!" : "Not Hotdog!")
-                } icon: {
-                    Image(systemName: classifier.results == "hot dog" ? "o.circle" : "x.circle")
+                if showLabel {
+                    Label {
+                        Text(classifier.results == "hotdog" ? "Hotdog!" : "Not Hotdog!")
+                    } icon: {
+                        Image(systemName: classifier.results == "hotdog" ? "o.circle" : "x.circle")
+                    }
+                    .foregroundColor(classifier.results == "hotdog" ? .green : .red)
+                    .font(.title)
                 }
-                .foregroundColor(classifier.results == "hot dog" ? .green : .red)
-                .font(.title)
-//                .hidden()
                 Button {
                     if vm.frame != nil {
                         guard let image = vm.frame else { return }
                         classifier.detect(cgImage: image)
                     }
+                    showLabel = true
                     print(classifier.results)
                 } label: {
                     Text("Hotdog?")
