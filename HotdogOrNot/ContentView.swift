@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
+    var image: CGImage?
+    private let label = Text("Camera feed")
+    var session = AVCaptureSession()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+          FrameView(image: nil)
+                .edgesIgnoringSafeArea(.all)
+
+          Text("Filter the World!")
+            .foregroundColor(.white)
         }
     }
 }

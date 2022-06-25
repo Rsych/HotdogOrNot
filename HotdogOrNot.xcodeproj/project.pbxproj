@@ -11,6 +11,10 @@
 		7192823428679AA500D894C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192823328679AA500D894C8 /* ContentView.swift */; };
 		7192823628679AA600D894C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7192823528679AA600D894C8 /* Assets.xcassets */; };
 		7192823928679AA600D894C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7192823828679AA600D894C8 /* Preview Assets.xcassets */; };
+		7192824028679CDD00D894C8 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7192823F28679CDD00D894C8 /* MobileNetV2.mlmodel */; };
+		719282442867A3CD00D894C8 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282432867A3CD00D894C8 /* FrameView.swift */; };
+		719282462867A48500D894C8 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282452867A48500D894C8 /* CameraManager.swift */; };
+		719282482867A4EC00D894C8 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282472867A4EC00D894C8 /* CameraError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		7192823328679AA500D894C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7192823528679AA600D894C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7192823828679AA600D894C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7192823F28679CDD00D894C8 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		719282432867A3CD00D894C8 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		719282452867A48500D894C8 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		719282472867A4EC00D894C8 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			children = (
 				7192823128679AA500D894C8 /* HotdogOrNotApp.swift */,
 				7192823328679AA500D894C8 /* ContentView.swift */,
+				719282452867A48500D894C8 /* CameraManager.swift */,
+				719282472867A4EC00D894C8 /* CameraError.swift */,
+				719282432867A3CD00D894C8 /* FrameView.swift */,
 				7192823528679AA600D894C8 /* Assets.xcassets */,
+				7192823F28679CDD00D894C8 /* MobileNetV2.mlmodel */,
 				7192823728679AA600D894C8 /* Preview Content */,
 			);
 			path = HotdogOrNot;
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719282442867A3CD00D894C8 /* FrameView.swift in Sources */,
+				7192824028679CDD00D894C8 /* MobileNetV2.mlmodel in Sources */,
 				7192823428679AA500D894C8 /* ContentView.swift in Sources */,
 				7192823228679AA500D894C8 /* HotdogOrNotApp.swift in Sources */,
+				719282462867A48500D894C8 /* CameraManager.swift in Sources */,
+				719282482867A4EC00D894C8 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +286,7 @@
 				DEVELOPMENT_TEAM = G6V85GALCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +316,7 @@
 				DEVELOPMENT_TEAM = G6V85GALCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to check image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
