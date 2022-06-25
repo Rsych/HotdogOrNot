@@ -9,7 +9,9 @@ import CoreImage
 
 class ContentViewModel: ObservableObject {
     @Published var frame: CGImage?
+    @Published var error: Error?
     
+    private let cameraManager = CameraManager.shared
     private let frameManager = FrameManager.shared
     
     init() {
@@ -23,5 +25,10 @@ class ContentViewModel: ObservableObject {
                 return CGImage.create(from: buffer)
             }
             .assign(to: &$frame)
+        
+        cameraManager.$error
+            .receive(on: RunLoop.main)
+            .map { $0 }
+            .assign(to: &$error)
     }
 }
