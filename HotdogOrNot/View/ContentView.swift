@@ -14,12 +14,27 @@ struct ContentView: View {
     var session = AVCaptureSession()
     
     @StateObject private var vm = ContentViewModel()
-
+    
     var body: some View {
         ZStack {
             FrameView(image: vm.frame)
                 .edgesIgnoringSafeArea(.all)
             ErrorView(error: vm.error)
+            VStack {
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Text("Hotdog?")
+                }
+                .padding(.vertical, 10)
+                .padding(.horizontal)
+                .foregroundColor(.black)
+                .background(.white)
+                .animation(.easeInOut, value: 0.25)
+                .cornerRadius(10)
+            }
         }
     }
 }
