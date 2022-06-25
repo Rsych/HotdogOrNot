@@ -19,6 +19,7 @@ struct ContentView: View {
         ZStack {
             FrameView(image: vm.frame)
                 .edgesIgnoringSafeArea(.all)
+            ErrorView(error: vm.error)
         }
     }
 }

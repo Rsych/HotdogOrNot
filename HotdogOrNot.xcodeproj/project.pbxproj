@@ -18,6 +18,8 @@
 		7192824A2867AA0500D894C8 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282492867AA0500D894C8 /* FrameManager.swift */; };
 		7192824C2867AAFE00D894C8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192824B2867AAFE00D894C8 /* ContentViewModel.swift */; };
 		7192824E2867AC1500D894C8 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192824D2867AC1500D894C8 /* CGImage+Extension.swift */; };
+		719282542867B22A00D894C8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282532867B22A00D894C8 /* ErrorView.swift */; };
+		719282562867B32F00D894C8 /* DataController-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282552867B32F00D894C8 /* DataController-Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		719282492867AA0500D894C8 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		7192824B2867AAFE00D894C8 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7192824D2867AC1500D894C8 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		719282532867B22A00D894C8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		719282552867B32F00D894C8 /* DataController-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataController-Settings.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		7192824F2867AFB600D894C8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				719282552867B32F00D894C8 /* DataController-Settings.swift */,
 				7192824D2867AC1500D894C8 /* CGImage+Extension.swift */,
 			);
 			path = Extension;
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7192823328679AA500D894C8 /* ContentView.swift */,
+				719282532867B22A00D894C8 /* ErrorView.swift */,
 				719282432867A3CD00D894C8 /* FrameView.swift */,
 			);
 			path = View;
@@ -193,8 +199,10 @@
 				7192824C2867AAFE00D894C8 /* ContentViewModel.swift in Sources */,
 				719282442867A3CD00D894C8 /* FrameView.swift in Sources */,
 				7192824028679CDD00D894C8 /* MobileNetV2.mlmodel in Sources */,
+				719282562867B32F00D894C8 /* DataController-Settings.swift in Sources */,
 				7192823428679AA500D894C8 /* ContentView.swift in Sources */,
 				7192823228679AA500D894C8 /* HotdogOrNotApp.swift in Sources */,
+				719282542867B22A00D894C8 /* ErrorView.swift in Sources */,
 				7192824E2867AC1500D894C8 /* CGImage+Extension.swift in Sources */,
 				719282462867A48500D894C8 /* CameraManager.swift in Sources */,
 				7192824A2867AA0500D894C8 /* FrameManager.swift in Sources */,
