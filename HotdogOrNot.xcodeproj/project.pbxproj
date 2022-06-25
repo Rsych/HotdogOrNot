@@ -20,6 +20,7 @@
 		7192824E2867AC1500D894C8 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192824D2867AC1500D894C8 /* CGImage+Extension.swift */; };
 		719282542867B22A00D894C8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282532867B22A00D894C8 /* ErrorView.swift */; };
 		719282562867B32F00D894C8 /* DataController-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282552867B32F00D894C8 /* DataController-Settings.swift */; };
+		719282582867B6CE00D894C8 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719282572867B6CE00D894C8 /* Classifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7192824D2867AC1500D894C8 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
 		719282532867B22A00D894C8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		719282552867B32F00D894C8 /* DataController-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataController-Settings.swift"; sourceTree = "<group>"; };
+		719282572867B6CE00D894C8 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				7192824F2867AFB600D894C8 /* Extension */,
 				7192823528679AA600D894C8 /* Assets.xcassets */,
 				7192823F28679CDD00D894C8 /* MobileNetV2.mlmodel */,
+				719282572867B6CE00D894C8 /* Classifier.swift */,
 				7192823728679AA600D894C8 /* Preview Content */,
 			);
 			path = HotdogOrNot;
@@ -200,6 +203,7 @@
 				719282442867A3CD00D894C8 /* FrameView.swift in Sources */,
 				7192824028679CDD00D894C8 /* MobileNetV2.mlmodel in Sources */,
 				719282562867B32F00D894C8 /* DataController-Settings.swift in Sources */,
+				719282582867B6CE00D894C8 /* Classifier.swift in Sources */,
 				7192823428679AA500D894C8 /* ContentView.swift in Sources */,
 				7192823228679AA500D894C8 /* HotdogOrNotApp.swift in Sources */,
 				719282542867B22A00D894C8 /* ErrorView.swift in Sources */,
