@@ -27,11 +27,11 @@ struct ContentView: View {
                 Spacer()
                 if showLabel {
                     Label {
-                        Text(classifier.results == "hotdog" ? "Hotdog!" : "Not Hotdog!")
+                        Text(classifier.results == "hotdog, hot dog, red hot" ? "Hotdog!" : "Not Hotdog!")
                     } icon: {
-                        Image(systemName: classifier.results == "hotdog" ? "o.circle" : "x.circle")
+                        Image(systemName: classifier.results == "hotdog, hot dog, red hot" ? "o.circle" : "x.circle")
                     }
-                    .foregroundColor(classifier.results == "hotdog" ? .green : .red)
+                    .foregroundColor(classifier.results == "hotdog, hot dog, red hot" ? .green : .red)
                     .font(.title)
                 }
                 Button {
